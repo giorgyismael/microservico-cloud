@@ -1,0 +1,18 @@
+server:
+  port: 8888
+spring:
+  application:
+    name: Microservice-Cloud
+  #profiles:
+    #active:
+    #- native
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/giorgyismael/microservice-config-cloud.git
+          #username: 
+          #password:
+          default-label: main
+          search-paths:
+          - 'config-cloud*'

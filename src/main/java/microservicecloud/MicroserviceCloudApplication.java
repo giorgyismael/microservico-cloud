@@ -5,7 +5,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.config.server.EnableConfigServer;
 
 @SpringBootApplication
-@EnableConfigServer
+@EnableConfigServer //Habilita o server para ser um propagador de configurações
 public class MicroserviceCloudApplication {
 
 	public static void main(String[] args) {
